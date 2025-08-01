@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MyGirl - Hari Spesial</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url('https://files.catbox.moe/12evl9.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      padding: 50px 20px;
+      overflow-x: hidden;
+    }
+    h1, h2 {
+      font-family: 'Pacifico', cursive;
+      text-shadow: 2px 2px 8px #f56c93;
+    }
+    h1 {
+      font-size: 3em;
+      color: #fff3f8;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #f7598b;
+      text-shadow: 1px 1px 5px white;
+    }
+    p, .msg {
+      font-size: 1.3em;
+      background: rgba(255,255,255,0.1);
+      padding: 25px;
+      border-radius: 15px;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.7;
+      box-shadow: 0 0 20px rgba(255,255,255,0.3);
+      color: #fff;
+    }
+    .msg {
+      background: rgba(255,255,255,0.85);
+      color: #333;
+      padding: 30px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 15px 30px;
+      background: #fff;
+      color: #f35e8c;
+      font-weight: bold;
+      font-size: 1.1em;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #f35e8c;
+      color: white;
+    }
+    .caption {
+      margin-top: 20px;
+      font-size: 1em;
+      font-style: italic;
+      color: #ffe6ef;
+      text-shadow: 1px 1px 3px #f7598b;
+    }
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      left: 50%;
+      animation: float 10s infinite;
+      border-radius: 50%;
+    }
+    @keyframes float {
+      0% { transform: translateY(0) scale(1);}
+      50% { transform: translateY(-500px) scale(1.5);}
+      100% { transform: translateY(0) scale(1);}
+    }
+    .page { display: none; }
+    .active { display: block; }
+
+    .galeri {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .galeri img {
+      width: 200px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Halaman 1 -->
+  <div id="halaman1" class="page active">
+    <h1>Hai Cwe Ku Yg Tercantik 💖</h1>
+    <p>
+      Dari sekian banyak orang di dunia ini, cuma kamu yang bisa bikin aku sesenyaman ini.  
+      Kamu tuh bukan cuma indah dari luar, tapi juga dari hati.  
+      Gak peduli hari ini cerah atau mendung, asal ada kamu, semuanya terasa hangat.  
+      Terima kasih udah jadi alasanku buat senyum tiap hari.  
+      Ini hari kita, dan aku gak mau jalan sama siapa pun... selain kamu. 😘
+    </p>
+    <div class="caption">🎵 Now playing: *My Girl* - The Temptations 🎵</div>
+    <br>
+    <button class="btn" onclick="showPage('halaman2')">Pencet Sini Sayangku 💘</button>
+  </div>
+
+  <!-- Halaman 2 -->
+  <div id="halaman2" class="page">
+    <h2>Untuk Cewek yang Selalu Ada di Hati Aku 💗</h2>
+    <div class="msg">
+      Aku tahu kita gak sempurna, tapi aku yakin, kita kuat karena kita saling sayang.  
+      Kamu bukan cuma pacar, kamu temen cerita, sahabat, dan rumah buat hati aku.  
+      Kalau suatu hari nanti semua terasa berat, ingat ya…  
+      <strong>**Aku di sini. Buat kamu. Selalu.**</strong>  
+      *Sehat Selalu Sayangku [Suci .R]*  
+      Love you to the moon and back 💕
+    </div>
+    <div class="caption">🎶 Now playing: My Girl - The Temptations 🎶</div>
+    <br>
+    <button class="btn" onclick="showPage('halaman3')">❤️ Lanjut Lagi Sayang</button>
+  </div>
+
+  <!-- Halaman 3 -->
+  <div id="halaman3" class="page">
+    <h2>Kita Selalu Kuat 💪</h2>
+    <div class="msg">
+      Walaupun kadang ada ribut kecil, tapi aku tahu cinta kita jauh lebih besar dari itu.  
+      Kita udah lewati banyak hal, dan aku percaya masa depan kita cerah kalau bareng-bareng.  
+      Pegang tanganku, kita lewati semuanya bareng ya...  
+      *Aku sayang kamu, tiap hari makin dalam 💞*
+    </div>
+    <br>
+    <button class="btn" onclick="showPage('halaman4')">💍 Lanjut ke Janji Kita</button>
+  </div>
+
+  <!-- Halaman 4 -->
+  <div id="halaman4" class="page">
+    <h2>Janji untuk Hari Ini dan Seterusnya 💍</h2>
+    <div class="msg">
+      Aku janji buat selalu ada, dalam tawa dan air mata.  
+      Janji buat dengerin kamu, nemenin kamu, dan sayangin kamu tanpa syarat.  
+      Ini bukan cuma hari spesial buat kita, tapi awal dari banyak momen indah.  
+      *Aku dan kamu, selamanya 💖*
+    </div>
+    <br>
+    <button class="btn" onclick="showPage('halaman5')">📸 Lihat Galeri Kita</button>
+  </div>
+
+  <!-- Halaman 5: Galeri Foto -->
+  <div id="halaman5" class="page">
+    <h2>📸 Kenangan Kita Berdua</h2>
+    <div class="galeri">
+      <img src="https://files.catbox.moe/npglaz.jpg">
+      <img src="https://files.catbox.moe/ebj50c.jpg">
+      <img src="https://files.catbox.moe/qe4xra.jpg">
+      <img src="https://files.catbox.moe/pzx07v.jpg">
+    </div>
+    <div class="caption">💕 Setiap momen ini, aku simpan dalam hati. 💕</div>
+    <br>
+    <button class="btn" onclick="showPage('halaman1')">↩️ Kembali ke Awal</button>
+  </div>
+
+  <!-- Musik tetap menyala -->
+  <audio autoplay loop>
+    <source src="https://files.catbox.moe/xkfzkd.mp3" type="audio/mpeg">
+    Browser kamu tidak mendukung audio.
+  </audio>
+
+  <!-- Hati animasi -->
+  <script>
+    setInterval(() => {
+      const heart = document.createElement("div");
+      heart.className = "heart";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.background = "#" + Math.floor(Math.random()*16777215).toString(16);
+      heart.style.animationDuration = (Math.random() * 5 + 5) + "s";
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 10000);
+    }, 500);
+
+    function showPage(id) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
